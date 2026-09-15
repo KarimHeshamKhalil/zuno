@@ -17,9 +17,8 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "https://zuno-puce.vercel.app";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://zuno-puce.vercel.app";
 const SITE_NAME = "ZUNO — Find Your Dream Home";
 const SITE_DESC =
   "Prestige Realty by ZUNO — browse verified villas, apartments, penthouses and family homes across Texas, New York, California and Florida. Tour verified listings with local experts.";

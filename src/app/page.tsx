@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Prestige Realty — Find Your Dream Home",
     description:
       "Search verified homes across Texas, New York, California and Florida. Transparent pricing, local experts, instant tours.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ZUNO — Find Your Dream Home",
+      },
+    ],
   },
 };
 
