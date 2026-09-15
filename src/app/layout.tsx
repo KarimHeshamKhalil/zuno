@@ -17,7 +17,9 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://zuno-estate.vercel.app";
+const SITE_URL = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : "https://zuno-puce.vercel.app";
 const SITE_NAME = "ZUNO — Find Your Dream Home";
 const SITE_DESC =
   "Prestige Realty by ZUNO — browse verified villas, apartments, penthouses and family homes across Texas, New York, California and Florida. Tour verified listings with local experts.";
@@ -47,7 +49,7 @@ export const metadata: Metadata = {
     description: SITE_DESC,
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "ZUNO — Find Your Dream Home",
@@ -58,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_NAME,
     description: SITE_DESC,
-    images: ["/opengraph-image"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/icon.svg",

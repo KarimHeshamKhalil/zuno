@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     title: "Prestige Realty — Find Your Dream Home",
     description:
       "Search verified homes across Texas, New York, California and Florida. Transparent pricing, local experts, instant tours.",
-    url: "https://zuno-estate.vercel.app/",
   },
 };
 
